@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vehicle Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <img src="logo3.png" alt="Logo" width="60px" height="54px" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="#"><img src="mainlogo.png" alt="Logo" width="60px" height="54px"
+          class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 5%;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><span><i class="fa fa-home"
+                  style="font-size:16px;margin-right: 3px; :hover{color: rgb(229, 84, 127);}"></i>Home</span></a>
+          </li><span style="color: rgb(209, 33, 92);font-size: x-large;">/</span>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#owner2" id="owner"><span><i class="fa fa-user"
+                  style="font-size:14px;margin-right: 4px;"></i>Ownership</span></a>
+          </li>
+          <!-- company section -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#company"><span><i class="fa fa-building"
+                  style="font-size:12px; margin-right: 4px; :hover{color: rgb(229, 84, 127);}"></i>Company</span></a>
+          </li><span style="color: rgb(209, 33, 92);font-size: x-large;">/</span>
+
+          <!-- vehicle section -->
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#owner1"><span><i class="fa fa-car"
+                  style="font-size:12px; margin-right: 4px; :hover{color: rgb(229, 84, 127);}"></i>Vehicle</span></a>
+          </li><span style="color: rgb(209, 33, 92);font-size: x-large;">/</span>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html"><span><i class="fa fa-phone"
+                  style="font-size:14px;margin-right: 4px;"></i>Contact Us</span></a>
+          </li><span style="color: rgb(209, 33, 92);font-size: x-large;">/</span>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span>FAQs ?</span></a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search" style="margin-right: 2%;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" style="color: rgb(226, 240, 226);">Search</button>
+
+        </form>
+
+        <a href="" style="margin-right: 3%;margin-left: 2%;"><i class="fa fa-shopping-cart" id="shop"
+            style="margin-left: 3%;font-size: larger;"></i></a>
+        <i class="fa fa-ellipsis-v" style="margin-left: 0.3%;font-size: larger; color: rgb(209, 209, 209);"></i>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- section no 2 slider -->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="silder image 2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: beige;">Bugatti</h5>
+          <p style="color: beige;">Some representative placeholder content for the first slide.</p>
+          <button class="btn btn-outline-success" type="submit"
+            style="color: rgb(226, 240, 226);padding-left: 35px;padding-right: 35px;">BUY</button>
+
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="slider image 2.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: beige;">Ferrai</h5>
+          <p style="color: beige;">Some representative placeholder content for the second slide.</p>
+          <button class="btn btn-outline-success" type="submit"
+            style="color: rgb(226, 240, 226);padding-left: 35px;padding-right: 35px;button- :hover{color: white;}"><span>BUY</span></button>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="slider image3.avif" class="d-block w-100" alt="..." width="90%">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: rgb(255, 255, 255);">Porsche</h5>
+          <p style="color: rgb(255, 255, 255);">Some representative placeholder content for the third slide.</p>
+          <button class="btn btn-outline-success" type="submit"
+            style="color: rgb(255, 255, 255);padding-left: 35px;padding-right: 35px">BUY</button>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- ABOUT OWNER SECTION  -->
+
+  <div>
+    <h1 style="text-align: center; margin-bottom: -0.7%;margin-top: 1%;" id="owner">Ownership</h1>
+    <img src="owner.webp" class="img-fluid" alt="" width="34%" height="200px"
+      style="display: inline-block;margin-top: -11.8%; border-radius: 6px;margin-left: 2%;margin-right: 3px;">
+    <div
+      style="display: inline-block;background-color: rgb(243, 243, 243); padding: 20px 20px 7px 20px; margin-top: 2%; border:0.1px rgb(212, 212, 212) solid;border-radius: 6px;"
+      id="owner2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laudantium veritatis
+      repellendus <br> vel fuga necessitatibus commodi eius aperiam laboriosa ab.
+      Lorem ipsum dolor sit amet consectetur. <br> Voluptatem laudantium veritatis nam voluptatibus
+      ut odit repellendus quo sed, <br> vel fuga necessitatibus commodi eius aperiam sit unde,<br> in laboriosam
+      perferendis <br><br><br>
+    </div>
+  </div>
+
+  <!-- selling  section -->
+  <h3 style="text-align: center;margin-top: 2%" id="owner1">Unsere Fahrzeuge Mit Chauffeur</h3>
+
+  <!-- CARS SECTION  -->
+  <div class="carousel-item" style="display: inline-block; width: 35%;">
+    <a href="" style="text-decoration: none;">
+    <img src="slider2 image.png" class="d-block w-100" alt="..." width="35%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -12%;">Porsche</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for the third slide.</p>
+    <div style="margin-top: -1%;margin-left: 38%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px">BUY</button>
+</a>
+    </div>
+  </div>
+  <div class="carousel-item" style="display: inline;width: 28%; margin-left: 36%; margin-top: 2.4%;">
+    <a href="" style="text-decoration: none;">
+    <img src="slider2 image1.png" class="d-block w-100" alt="..." width="28%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -5%;">BMW</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for .</p>
+    <div style="margin-top: -1%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px;margin-top: -1%;margin-left: 38%;">BUY</button>
+</a>
+    </div>
+  </div>
+  <div class="carousel-item" style="display: inline;width: 28%; margin-left: 66%; margin-top: 0.5%;">
+    <a href="" style="text-decoration: none;">
+    <img src="cars.png" class="d-block w-100" alt="..." width="28%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -10%;">Honda</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for </p>
+    <div style="margin-top: -1%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px;margin-top: -1%;margin-left: 38%;">BUY</button>
+</a>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <!-- Trucks section  -->
+  <div class="carousel-item" style="display: inline-block; width: 35%;">
+    <a href="" style="text-decoration: none;">
+    <img src="truck1.png" class="d-block w-100" alt="..." width="35%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -7%;">Truck</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for the third slide.</p>
+    <div style="margin-top: -1%;margin-left: 38%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px">BUY</button>
+</a>
+    </div>
+  </div>
+  <div class="carousel-item" style="display: inline;width: 28%; margin-left: 36%; margin-top: 2.2%;">
+    <a href="" style="text-decoration: none;">
+    <img src="truck3.png" class="d-block w-100" alt="..." width="28%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -3%;">Truck</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for .</p>
+    <div style="margin-top: -1%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px;margin-top: -1%;margin-left: 38%;">BUY</button>
+</a>
+    </div>
+  </div>
+  <div class="carousel-item" style="display: inline;width: 28%; margin-left: 66%; margin-top: -2.5%;">
+    <a href="" style="text-decoration: none;">
+    <img src="cycle1.png" class="d-block w-100" alt="..." width="28%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -3%;">Cycle</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for </p>
+    <div style="margin-top: -1%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px;margin-top: -1%;margin-left: 38%;">BUY</button>
+</a>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+  <!-- MotorCycle section  -->
+  <div class="carousel-item" style="display: inline-block; width: 35%;">
+    <a href="" style="text-decoration: none;">
+    <img src="motorcycle1.png" class="d-block w-75" alt="..." width="75%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -0..5%;">MotorCycle</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for the third slide.</p>
+    <div style="margin-top: -1%;margin-left: 38%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px">BUY</button>
+</a>
+    </div>
+  </div>
+  <div class="carousel-item" style="display: inline;width: 28%; margin-left: 36%; margin-top: -0.4%;">
+    <a href="" style="text-decoration: none;">
+    <img src="motorcycle3.png" class="d-block w-98" alt="..." width="95%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -3%;">MotorCycle</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for .</p>
+    <div style="margin-top: -1%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px;margin-top: -1%;margin-left: 38%;">BUY</button>
+</a>
+    </div>
+  </div>
+  <div class="carousel-item" style="display: inline;width: 28%; margin-left: 66%; margin-top: 0.5%;">
+    <a href="" style="text-decoration: none;">
+    <img src="cycle3.png" class="d-block w-100" alt="..." width="28%">
+    <h5 style="color: rgb(0, 0, 0); text-align: center;margin-top: -10%;">Cycle</h5>
+    <p style="color: rgb(0, 0, 0);text-align: center;">Some representative placeholder content for </p>
+    <div style="margin-top: -1%;">
+      <button class="btn btn-outline-success" type="submit"
+        style="color: rgb(0, 0, 0);padding-left: 35px;padding-right: 35px;margin-top: -1%;margin-left: 38%;">BUY</button>
+
+    </div>
+  </a>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- comapny section  -->
+
+  
+    <div class="row" style="margin-left: 5%; margin-right: 0;">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="/w3images/lights.jpg" style="color: black;text-decoration: none;">
+            <img src="lamborghini logo.jpg" alt="Lights" style="width:70%">
+            <div class="caption">
+              <p style="margin-left: 25%;">Lamborghini</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4" style="margin-left: 4%;">
+        <div class="thumbnail">
+          <a href="/w3images/nature.jpg" style="color: black;text-decoration: none;">
+            <img src="Mercedeslogo.png" alt="Nature" style="width:51.9%">
+            <div class="caption">
+              <p style="margin-left: 17%;">Mercedes</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4" style="margin-left: -4%;">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg" style="color: black;text-decoration: none;">
+            <img src="ferrari logo.png" alt="Fjords" style="width:78%">
+            <div class="caption">
+              <p style="margin-left: 33%;margin-top: 7%; ">Ferrari</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <!-- footer section  -->
+
+ <!-- Footer -->
+<footer  style="background-color: #333333;">
+  <!-- Grid container -->
+  <div class="container p-4" style="background-color: #333333;">
+
+    <!-- Section: Social media -->
+    <section class="mb-4" style="background-color: #333333;margin-left: 40%;">
+      <!-- Facebook -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fa fa-facebook"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fa fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+      <!-- Github -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fa fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+
+
+    <!-- Section: Form -->
+    <section class="" style="background-color: #333333;">
+      <form action="" style="background-color: #333333;">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center" style="background-color: #333333;">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong style="color: white;">Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12" style="background-color: #333333;">
+            <!-- Email input -->
+            <div class="form-outline mb-4" style="background-color: #333333;">
+              <input type="email" id="form5Example2" class="form-control" style="background-color: #ffffff;color: white;" placeholder="Email Address">
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto" style="background-color: #333333;">
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4" style="color: white;">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+
+    <!-- Section: Text -->
+    <section class="mb-4" style="background-color: #333333;">
+      <p style="color: white;text-align: left;margin-left: 40%;">
+        ZN Website is a World no 1 selling of vehicles <br>
+        vel fuga necessitatibus commodi eius .<br>
+        aperiam laboriosa ab.consectetur adipisicing elit <br>
+        Lorem ipsum dolor sit amet consectetur. amet .<br>
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+
+    <!-- Section: Links -->
+    <section class="" style="background-color: #333333;">
+      <!--Grid row-->
+      <div class="row" style="background-color: #333333;">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="margin-left: 3%;">
+ 
+
+          <ul class="list-unstyled" style="text-align: left; margin-left: 60%;background-color: #333333;" >
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: white;"></i><span> Home</span> </span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span>
+                    Ownership</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span>
+                    Company</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span>
+                    Vehicle</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span> Contact
+                    US</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span>
+                    FAQs?</span></span></a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-black mb-4 mb-md-0" style="background-color: #333333;">
+
+          <ul class="list-unstyled mb-0" style="text-align: left;margin-left: 20%;">
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: white;"></i><span> Ownership</span> </span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span> Meet
+                    Owner</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span> About
+                    Owner</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" href="#"><span style="color: rgb(144, 144, 144);"></i><span>
+                    Partnership</span></span></a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-black mb-4 mb-md-0" style="text-align: left;margin-left: -6%;background-color: #333333;">
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: white;"></i><span> Contact Us</span> </span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span>
+                    noraizshahoor07@gmail.com</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"><span> <i class="fa fa-phone"
+                      style="font-size:14px;margin-right: 4px;">+92-32-568-714-5687</i></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span> SOS Multan of PAK
+                  </span></span></a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-black mb-4 mb-md-0" style="text-align: left;margin-left: -3%;background-color: #333333;" >
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: white;"></i><span> FAQs ?</span> </span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span> Who is
+                    Owner?</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span> How we buy
+                    car?</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page"  class="text-dark"href="#"><span style="color: rgb(144, 144, 144);"></i><span> </span>How we get
+                  Partnership?</span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span>How to Contact
+                    US?</span></span></a>
+            </li>
+            <li>
+              <a aria-current="page" class="text-dark" href="#"><span style="color: rgb(144, 144, 144);"></i><span>More FAQs
+                    ?</span></span></a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgb(0, 0, 0); color: white;">
+    © 2024 Copyright:
+    <a class="text" href="https://mdbootstrap.com/" style="color: rgb(255, 255, 255); text-decoration: none;">ZNvehicle.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!-- Javascript section -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
